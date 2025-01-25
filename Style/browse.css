@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 80px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar ul li a:hover{
+    color: rgb(227, 139, 154);
+}
+
+#searchBox {
+    padding: 5px;
+    font-size: 14px;
+    border: 2px solid transparent; /* Default transparent border */
+    border-radius: 10px;
+    margin-right: 20px;
+    outline: none; /* Removes default focus outline */
+}
+
+    #searchBox:hover {
+    border-color: pink; /* Border turns pink on hover */
+}
+
+    #searchBox:focus {
+    border-color: pink; /* Keeps the pink border when focused */
+}
+.navbar button{
+    border: 2px solid pink;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: black;
+    z-index: 1;
+}
+
+.content h1{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.content p{
+    font-weight: 70px;
+    line-height: 25px;
+}
+
+.grid-container1, .grid-container2, .grid-container3{
+    margin-top: 170px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+  }
+
+  .grid-container2, .grid-container3{
+    margin-top: 50px;
+  }
+  
+  .grid-item {
+    text-align: center; /* Centers the text under the image */
+    border: 1px solid #ddd; /* Optional: Add a border around each item */
+    padding: 10px;
+    background-color: #f9f9f9; /* Optional: Background color for each item */
+  }
+  
+  .grid-item img {
+    width: 250px;              
+    height: 300px; 
+    object-fit: cover;
+    margin-bottom: 10px; /* Space between image and text */
+  }
+
+  .grid-item p{
+    list-style: none;
+  }
+
+  .pic-details li{
+    display: flex;
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+
+  .pic-details img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .fixed-button {
+    padding: 10px 20px;
+    background-color: rgb(233, 87, 87); /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+  }
+  
+  .fixed-button:hover {
+    background-color: red; /* Darker shade on hover */
+  }
+  
+
+  .footer{
+    margin-top: 30px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('pictures/gal9.jpeg');
+    color: white;
+    padding: 40px 20px;
+    position: relative; /* Positioning */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.footer-section {
+    flex: 1; 
+    min-width: 200px; 
+}
+
+.footer-section h4 {
+    margin-bottom: 10px; 
+}
+
+.footer-section ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    color: #009688;
+}
+
+.footer-bottom {
+    text-align: center; 
+    margin-top: 20px; 
+    font-size: 14px; 
+}
+  
